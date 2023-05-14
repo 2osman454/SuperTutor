@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta name="author" content="Ikebek Peter">
+  <meta name="description" content="the best tutors around">
+  <meta http-equiv="refresh" content="">
+  <meta name="keywords" content="best, tutor, math, sciences, chemistry, biology, physics">
+  <title>Mwalimu, The Super Tutor</title>
+</head>
+
+<header>
+  <div class="navbar">
+    <div class="Logo"><a href="index.html"><img src="EduLogo.PNG" width="" height="" alt="Customized Logo" class="Logo"></a></div>
+    <ul class="links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a class = "active" href="tutoring.html">Tutoring</a></li>
+      <li><a href="sessions.html">Sessions</a></li>
+      <li><a href="impact.html">Impacts</a></li>
+      <li><a href="faq.html">FAQs</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="toggle_btn">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </div>
+
+  <div class="dropdown_menu">
+    <ul class="link">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a class = "active" href="tutoring.html">Tutoring</a></li>
+      <li><a href="sessions.html">Sessions</a></li>
+      <li><a href="impact.html">Impacts</a></li>
+      <li><a href="faq.html">FAQs</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<body>
+<section id="tutoring">
+  <h2>Background</h2>
+
+  <p class="reference"> Denim is a strong, durable cotton warp-faced textile
+    used in making jeans and other type of clothes. It is thought to have its
+    <a href="https://books.google.com/books?id=qZCuAwAAQBAJ&pg=PA203" target="_blank">origin</a>
+    at Nimes town in France.</p>
+  <p>The appearance of denim since the mid-19th century is a game changer
+    for the fashion industry today. The demand for more durable and quality
+    clothing is increasingly becoming a priority. Denim popularity all over
+    the world has earn jeans wear a prominent stage in the world market.</p>
+  <p>Young and old people passion for denim clothing is on the rise. The
+    availability of jeans in different colors and designs gives young
+    people a variety of denim fabrics and garments to choose from. The
+    responsive pictures below are some examples of denim fabrics:</p>
+  <figure>
+    <a href="https://www.fabric.com/buy/el-299/10-oz-bull-denim-black" target="_blank">
+      <img src="Bull denim black.PNG" align="top" width="350" height="400" alt="Bull denim black denim fabric"></a>
+    <a href="https://www.fabric.com/buy/ul-913/9-oz-brushed-bull-denim-spruce-green" target="_blank">
+      <img src="Brushed Bull Denim Spruce Green.PNG" align="top" width="350" height="400" alt="Indigo dyed denim fabric"></a>
+    <a href="https://www.fabric.com/buy/0391351/indigo-denim-12-oz-dark-unwashed" target="_blank">
+      <img src="Darked unwashed.PNG" align="top" width="350" height="400" alt="Dark unwashed denim fabric"></a>
+    <figcaption>Some examples of denim fabrics: Bull denim black (left),
+      brushed bull denim spruce green (middle) and dark unwashed denim fabric (right).</figcaption>
+  </figure>
+  <p class="reference"> The following are some of the different existing
+    <a href="https://books.google.com/books?id=qZCuAwAAQBAJ&pg=PA203" target="_blank">forms of denim
+      fabrics</a> extensively used in the fashion industry:</p>
+  <div class="b">
+    <ul>
+      <li>Stretch denim</li>
+      <li>Pseudo denim</li>
+      <li>Generic denim</li>
+      <li>Reverse denim</li>
+    </ul>
+  </div>
+  <p> The combination of cotton with different fibres has improved the
+    functionality of the different denim materials one would love to have
+    in their wardrobe.</p>
+  <p> The existence of denim for over a century is indicative of the
+    importance of this fabric in the fashion industry and to the society
+    in general.</p>
+</section>
+
+<script>
+        const toggleBtn = document.querySelector(' .toggle_btn')
+        const toggleBtnIcon = document.querySelector(' .toggle_btn i')
+        const dropDownMenu = document.querySelector(' .dropdown_menu')
+
+        toggleBtn.onclick = function(){
+          dropDownMenu.classList.toggle('open')
+          const isOpen = dropDownMenu.classList.contains('open')
+
+          toggleBtnIcon.classList = isOpen
+          ? 'fa-solid fa-xmark'
+          : 'fa-solid fa-bars'
+        }
+      </script>
+
+<br>
+
+<footer><p> © 2023 by Mwalimu, The Super Tutor </p></footer>
+</body>
+</html>

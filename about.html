@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta name="author" content="Ikebek Peter">
+  <meta name="description" content="the best tutors around">
+  <meta http-equiv="refresh" content="">
+  <meta name="keywords" content="best, tutor, math, sciences, chemistry, biology, physics">
+  <title>About mwalimu</title>
+</head>
+
+<header>
+  <div class="navbar">
+    <div class="Logo"><a href="index.html"><img src="EduLogo.PNG" width="" height="" alt="Customized Logo" class="Logo"></a></div>
+    <ul class="links">
+      <li><a href="index.html">Home</a></li>
+      <li><a class = "active" href="about.html">About</a></li>
+      <li><a href="tutoring.html">Tutoring</a></li>
+      <li><a href="sessions.html">Sessions</a></li>
+      <li><a href="impact.html">Impacts</a></li>
+      <li><a href="faq.html">FAQs</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="toggle_btn">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </div>
+
+  <div class="dropdown_menu">
+    <ul class="link">
+      <li><a href="index.html">Home</a></li>
+      <li><a class = "active" href="about.html">About</a></li>
+      <li><a href="tutoring.html">Tutoring</a></li>
+      <li><a href="sessions.html">Sessions</a></li>
+      <li><a href="impact.html">Impacts</a></li>
+      <li><a href="faq.html">FAQs</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<body>
+<section id="about">
+  <div class="">
+    <div>
+            <span>
+            <img src="Profile.jpg" alt="Ikebek's profile" id="profile">
+            </span>
+    </div>
+    <h2>About me</h2>
+    <p id="parAroundProfile">A graduate with a BSCH degree in Biochemistry and Mathematical Science from
+      the University of Guelph, Ikebek is experienced in tutoring high school Mathematics,
+      Chemistry, Physics, and Biology.
+    </p>
+  </div>
+  <h2>Why Tutoring?</h2>
+  <p>Tutoring is a hobby I developed while interacting with classmates in school.
+    The more I explained concepts to classmates and group members, the better I
+    understood the topic, and the more confidence I gained.
+  </p>
+  <p>As I kept teaching friends during my later years in high school and my entire
+    university life, I learned that any student is capable of solving any given
+    problem but needs a little bit of help to do so given not only the limited
+    interaction with teachers and professors but also the
+    <a href="https://www.pathwaystoeducation.ca/the-impacts-of-socioeconomic-status-and-educational-attainment-on-youth-success/"
+       target="_blank" rel="noopener noreferrer">socioeconomic barriers</a>
+    that impact the student's progress.
+  </p>
+  <h2>Who am I?</h2>
+  <p>To get to know me better and my teaching methodology, click on any of the following
+    links or the navigation bar on to of the page:
+  </p>
+  <div class="lnks">
+    <div class="b">
+      <ul class="type">
+        <li><a href="tutoring.html">Education Background</a></li>
+        <li><a href="sessions.html">Teaching methodology</a></li>
+        <li><a href="impact.html">Subjects and level</a></li>
+        <li><a href="faq.html">Impacts</a></li>
+        <li><a href="contact.html">DON'T MISS THIS!</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<script>
+        const toggleBtn = document.querySelector(' .toggle_btn')
+        const toggleBtnIcon = document.querySelector(' .toggle_btn i')
+        const dropDownMenu = document.querySelector(' .dropdown_menu')
+
+        toggleBtn.onclick = function(){
+          dropDownMenu.classList.toggle('open')
+          const isOpen = dropDownMenu.classList.contains('open')
+
+          toggleBtnIcon.classList = isOpen
+          ? 'fa-solid fa-xmark'
+          : 'fa-solid fa-bars'
+        }
+      </script>
+
+<br>
+
+<footer><p> © 2023 by Mwalimu, The Super Tutor </p></footer>
+</body>
+</html>

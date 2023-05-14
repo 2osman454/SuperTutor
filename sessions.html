@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta name="author" content="Ikebek Peter">
+  <meta name="description" content="the best tutors around">
+  <meta http-equiv="refresh" content="">
+  <meta name="keywords" content="best, tutor, math, sciences, chemistry, biology, physics">
+  <title>Mwalimu, The Super Tutor</title>
+</head>
+
+<header>
+  <div class="navbar">
+    <div class="Logo"><a href="index.html"><img src="EduLogo.PNG" width="" height="" align="left" alt="Customized Logo" class="Logo"></a></div>
+    <ul class="links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="tutoring.html">Tutoring</a></li>
+      <li><a class = "active" href="sessions.html">Sessions</a></li>
+      <li><a href="impact.html">Impacts</a></li>
+      <li><a href="faq.html">FAQs</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="toggle_btn">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </div>
+
+  <div class="dropdown_menu">
+    <ul class="link">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="tutoring.html">Tutoring</a></li>
+      <li><a class = "active" href="sessions.html">Sessions</a></li>
+      <li><a href="impact.html">Impacts</a></li>
+      <li><a href="faq.html">FAQs</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<body>
+<section id="sustainabledenimoverview">
+  <h2> Sustainable Denim Overview</h2>
+  <p>Denim sustainability is an approach aimed at managing the stages of
+    the product's existence in order to minimize any negative impact on the environment.</p>
+  <p> Sustainability is quickly becoming a global focus, and this include
+    the fashion industry. In as much as everyone feels contented with
+    denim clothing, there is also need to shift our attention to how
+    these materials are produced and their potential impact on the
+    environment. Doing this will help us protect our very own planet
+    that we know today. </p>
+  <p>The following pictures are some of the finished
+    varieties of denim. Clicking on any of the pictures will take you to the
+    store where they are sold.</p>
+
+  <figure>
+    <a href="https://www.aliexpress.com/item/32958751779.html" target="_blank">
+      <img src="Black Denim shirt.PNG" align="top" width="350" height="400" alt="Black denim men shirt"></a>
+    <a href="https://www.everlane.com/products/womens-curvy-as-highrise-skinny-jean-black?collection=womens-jeans" target="_blank">
+      <img src="Stretch denim.PNG" align="top" width="350" height="400" alt="womens stretch denim"></a>
+    <a href="https://www.bluerdenim.com/collections/men/products/mens-modern-slim-cone-mills-white-oak-raw-selvage" target="_blank">
+      <img src="Mens.PNG" align="" width="350" height="400" alt="Men's Modern slim"></a>
+    <figcaption class="cap">Some examples of finished varieties of denim: Black denim shirt
+      men casual fit slim long sleeve (left), the curvy authentic stretch high
+      (middle), and men's Modern slim (right).</figcaption>
+  </figure>
+
+  <p> It is known that the clothing industry has one of the highest impacts
+    on the environment. With no exception, jeans are ranked as one of the
+    least eco-friendly items of clothing to manufacture. </p>
+</section>
+
+<script>
+        const toggleBtn = document.querySelector(' .toggle_btn')
+        const toggleBtnIcon = document.querySelector(' .toggle_btn i')
+        const dropDownMenu = document.querySelector(' .dropdown_menu')
+
+        toggleBtn.onclick = function(){
+          dropDownMenu.classList.toggle('open')
+          const isOpen = dropDownMenu.classList.contains('open')
+
+          toggleBtnIcon.classList = isOpen
+          ? 'fa-solid fa-xmark'
+          : 'fa-solid fa-bars'
+        }
+      </script>
+
+<br>
+
+<footer><p> © 2023 by Mwalimu, The Super Tutor </p></footer>
+</body>
+</html>

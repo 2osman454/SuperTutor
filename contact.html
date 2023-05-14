@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <style>.error {color: #FF0000;}</style>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta name="author" content="Ikebek Peter">
+  <meta name="description" content="the best tutors around">
+  <meta http-equiv="refresh" content="">
+  <meta name="keywords" content="best, tutor, math, sciences, chemistry, biology, physics">
+  <title>Contact Mwalimu</title>
+</head>
+
+<header>
+  <div class="navbar">
+    <div class="Logo"><a href="index.html"><img src="EduLogo.PNG" width="" height="" alt="Customized Logo" class="Logo"></a></div>
+    <ul class="links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="tutoring.html">Tutoring</a></li>
+      <li><a href="sessions.html">Sessions</a></li>
+      <li><a href="impact.html">Impacts</a></li>
+      <li><a href="faq.html">FAQs</a></li>
+      <li><a class = "active" href="contact.html">Contact</a></li>
+    </ul>
+    <div class="toggle_btn">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </div>
+
+  <div class="dropdown_menu">
+    <ul class="link">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="tutoring.html">Tutoring</a></li>
+      <li><a href="sessions.html">Sessions</a></li>
+      <li><a href="impact.html">Impacts</a></li>
+      <li><a href="faq.html">FAQs</a></li>
+      <li><a class = "active" href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<body>
+
+<script>
+      const toggleBtn = document.querySelector(' .toggle_btn')
+      const toggleBtnIcon = document.querySelector(' .toggle_btn i')
+      const dropDownMenu = document.querySelector(' .dropdown_menu')
+
+      toggleBtn.onclick = function(){
+        dropDownMenu.classList.toggle('open')
+        const isOpen = dropDownMenu.classList.contains('open')
+
+        toggleBtnIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+      }
+    </script>
+
+    <section>
+      <div class="container">
+        <div>
+          <h2>Contact Me</h2>
+          <p>Thank you for swinging by, say hello or book a session by leaving me 
+            a message and I will get back to you ASAP:</p>
+        </div>
+        <div class="row">
+          <div class="column">
+            <img src="Hoodie.PNG" alt="Hoodie">
+          </div>
+          <div class="column">
+            <p><span class="error">* required field</span></p>
+            <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>
+            <!--<form id="contact-form" method="post" action="contactFormHandler.php"> -->
+            <label for="name">Your Name</label>
+            <span class="error">* <?php echo $nameErr;?></span>
+            <input type="text" id="name" name="name" placeholder="Write your name here..." required>
+            <label for="email">Your E-mail</label>
+            <span class="error">* <?php echo $emailErr;?></span>
+            <input type="text" id="email" name="email" placeholder="Write your email here..." required>
+            <label for="Grade">Grade</label>
+            <select name="Grade" id="Grade">
+              <option value="Select grade">Select grade</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+            </select>
+            <label for="Subject">Subject</label>
+            <select id="Subject" name="Subject">
+              <option value="Select subject">Select subject</option>
+              <option value="Mathematics">Mathematics</option>
+              <option value="Chemistry">Chemistry</option>
+              <option value="Physics">Physics</option>
+            </select>
+            <label for="message">Message</label>
+            <span class="error">* <?php echo $messageErr;?></span>
+            <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+            <input type="submit" value="Submit">
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!--
+  <section id="contact">
+    <h2>Contact details</h2>
+        <address>
+          <p>Thanks for your interest to embark on denim sustainability project.</p>
+          <p>If you would like to contribute towards this project, please
+            contact me at either of the follwoing details:</p>
+        <ul>
+          <li>by phone @ 0123-456-7891</li>
+          <li>by email @ webdev&design@gmail.com</li>
+          <li>by visiting sustainable-denim.html</li>
+        </ul>
+        </address>
+  </section>
+
+  <script>
+    const toggleBtn = document.querySelector(' .toggle_btn')
+    const toggleBtnIcon = document.querySelector(' .toggle_btn i')
+    const dropDownMenu = document.querySelector(' .dropdown_menu')
+
+    toggleBtn.onclick = function(){
+      dropDownMenu.classList.toggle('open')
+      const isOpen = dropDownMenu.classList.contains('open')
+
+      toggleBtnIcon.classList = isOpen
+      ? 'fa-solid fa-xmark'
+      : 'fa-solid fa-bars'
+    }
+  </script>
+
+<br>
+
+<footer>
+  <ul>
+    <li><a href=""><i class="fab fa-facebook"></i><a/></li>
+    <li><a href=""><i class="fab fa-instagram-square"></i><a/></li>
+    <li><a href=""><i class="fab fa-twitter-square"></i><a/></li>
+    <li><a href=""><i class="fab fa-youtube-square"></i><a/></li>
+  </ul>
+
+  <script src="https://kit.fontawesome.com/d1aaff2cdf.js" crossorigin="anonymous"></script>
+
+-->
+
+<br>
+
+<footer><p> © 2023 by Mwalimu, The Super Tutor </p></footer>
+</body>
+</html>
