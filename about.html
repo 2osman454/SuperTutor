@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
+  <style>.error {color: #FF0000;}</style>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,7 +16,7 @@
   <meta name="description" content="the best tutors around">
   <meta http-equiv="refresh" content="">
   <meta name="keywords" content="best, tutor, math, sciences, chemistry, biology, physics">
-  <title>About mwalimu</title>
+  <title>Contact Mwalimu</title>
 </head>
 
 <header>
@@ -21,12 +24,12 @@
     <div class="Logo"><a href="index.html"><img src="EduLogo.PNG" width="" height="" alt="Customized Logo" class="Logo"></a></div>
     <ul class="links">
       <li><a href="index.html">Home</a></li>
-      <li><a class = "active" href="about.html">About</a></li>
+      <li><a href="about.html">About</a></li>
       <li><a href="tutoring.html">Tutoring</a></li>
       <li><a href="sessions.html">Sessions</a></li>
       <li><a href="impact.html">Impacts</a></li>
       <li><a href="faq.html">FAQs</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a class = "active" href="contact.html">Contact</a></li>
     </ul>
     <div class="toggle_btn">
       <i class="fa-solid fa-bars"></i>
@@ -36,125 +39,122 @@
   <div class="dropdown_menu">
     <ul class="link">
       <li><a href="index.html">Home</a></li>
-      <li><a class = "active" href="about.html">About</a></li>
+      <li><a href="about.html">About</a></li>
       <li><a href="tutoring.html">Tutoring</a></li>
       <li><a href="sessions.html">Sessions</a></li>
       <li><a href="impact.html">Impacts</a></li>
       <li><a href="faq.html">FAQs</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a class = "active" href="contact.html">Contact</a></li>
     </ul>
   </div>
 </header>
 
 <body>
-<section id="about">
-  <h2>About me</h2>
-  <div class="">
+
+<script>
+      const toggleBtn = document.querySelector(' .toggle_btn')
+      const toggleBtnIcon = document.querySelector(' .toggle_btn i')
+      const dropDownMenu = document.querySelector(' .dropdown_menu')
+
+      toggleBtn.onclick = function(){
+        dropDownMenu.classList.toggle('open')
+        const isOpen = dropDownMenu.classList.contains('open')
+
+        toggleBtnIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+      }
+    </script>
+
+<section>
+  <div class="container">
     <div>
-            <span>
-            <img src="Profile.jpg" alt="Ikebek's profile" id="profile">
-            </span>
+      <h2>Contact Me</h2>
+      <p>Thank you for swinging by, say hello or book a session by leaving me
+        a message and I will get back to you ASAP:</p>
     </div>
-    <h4>Current</h4>
-    <p id="parAroundProfile">A proud <a href="https://issuu.com/uofguelph/docs/classof2020_uofguelph_convocation_program" 
-      target="_blank" rel="noopener noreferrer">graduate</a> with a BSCH degree in Biochemistry and Mathematical 
-      Science from the <a href="https://www.uoguelph.ca/" target="_blank" rel="noopener noreferrer">University of Guelph</a>, 
-      I am a competent tutor with experience in tutoring high 
-      school Mathematics, Chemistry, and Physics.
-    </p>
-    <h4>Secondary School and Kakuma Refugee Camp</h4>
-    <p>My love for teaching started back in high school (secondary school, Kenya) at Kakuma Refugee Secondary School 
-      (KRSS) and Pleasant View Secondary School (now Pleasant View Schools). 
-      After graduating from KRSS as the third-best overall performer in Turkana West county for the 2013 Kenya 
-      Certificate of Secondary Education (KCSE) exams, I was employed as an incentive teacher by the
-      <a href="https://kenyasomalia.lutheranworld.org/" target="_blank" rel="noopener noreferrer">Lutheran World 
-        Federation </a> (LWF) in January 2014 and by <a href="https://windle.org/" target="_blank" rel="noopener 
-        noreferrer">Windle Trust Kenya</a> (WTK) the following year. 
-    </p>
-    <h4>Incentive Teacger</h4>
-    <p>Wondering what an incentive teacher is? The best explanation I can find is from the 
-      <a href="https://inee.org/eie-glossary/incentive-teacher" target="_blank" rel="noopener noreferrer">Inter-agency 
-        Network for Education in Emergencies</a>
-     (INEE): “The term incentive worker refers to a refugee who works 
-      for a UN or NGO agency in exchange for monthly incentive payments (stipend), which are usually substantially 
-      lower than the monthly wages (salary) of non-refugee staff.” </p>
-      <p> How low, you asked? Well, for primary and Secondary 
-      School incentive teachers at the time and up to now, the MONTHLY PAYMENT is around KSH 6000 (about CAD 75) and 
-      KSH 7200 (about CAD 85), respectively. That is one of the many issues that 
-      <a href="https://kanere.org/incentive-pay-raises-and-terminations-targeting-incentive-staffs/" target="_blank" 
-      rel="noopener noreferrer">Kakuma News Reflector</a> (KANERE) report.</p>
-    <p>Like other colleagues of mine who got the same incentive teaching positions, it was at KRSS that I earned 
-      the title of “Mwalimu,” a Kiswahili word for “the teacher.” At KRSS, I taught Chemistry, Mathematics, and 
-      Physics. As you may have guessed, the payment was not really the driving force. My reward and source of motivation 
-      was the compliment and results from my students (some of them with me in Canada now). That meant and still means a 
-      lot to me.
-    </p>
-    <h4>The University of Guelph and Canada</h4>
-    <p>Fast forward. In 2015, I was fortunate enough to be among the students sponsored by the 
-      <a href="https://wusc.ca/" target="_blank" rel="noopener noreferrer">World University Service of Canada</a> 
-      (WUSC) to study at the University of Guelph. The <a href="https://srp.wusc.ca/" target="_blank" rel="noopener 
-      noreferrer">Student Refugee Program</a> (SRP), through WUSC, combines resettlement with opportunities for higher 
-      education and supports over 150 refugee students annually. Visit the <a href="https://wusc.ca/" target="_blank" 
-      rel="noopener noreferrer">WUSC website</a> to volunteer your time or donate.
-    </p>
-    <p>During my undergraduate studies at the University of Guelph, I enjoyed explaining scientific concepts to my 
-      classmates and group members during group discussions. It is the same passion for helping others that 
-      still keeps me moving and even so are the rewarding results of the beneficiaries of my service. Check out my 
-      <a href="https://www.superprof.ca/graduate-with-bsch-degree-biochemistry-and-mathematical-science-from-the-university-guelph-ikebek-experienced.html" 
-      target="_blank" rel="noopener noreferrer">reviews and recommendations</a>!
-    </p>
-    <h4>Now and the Future</h4>
-    <p>So, how did it end? Here is what I can tell you. Once upon a time, I was a refugee with an unpredictable 
-      future but now I am a Canadian citizen enjoying the 
-      <a href="https://www.canada.ca/en/canadian-heritage/services/how-rights-protected/guide-canadian-charter-rights-freedoms.html" 
-      target="_blank" rel="noopener noreferrer">rights and freedoms</a> of a hospitable country, Canada. 
-      With a Bachelor of Science honours degree from the University of Guelph under my belt, I have a long way 
-      to go. Life is tough but no situation is permanent. With hard work and focus, there is always a glimmer of 
-      light at the end of the tunnel.
-    </p>
-  </div>
-  <h2>Why Tutoring?</h2>
-  <p>Tutoring is a hobby I developed while interacting with classmates and friends in school.
-    The more I explained concepts to classmates and group members, the better I
-    understood the topic, and the more confidence I gained.
-  </p>
-  <p>As I kept teaching friends during my later years in high school and my entire
-    university life, I learned that any student is capable of solving any given
-    problem but needs a little bit of help to do so given not only the limited
-    interaction with teachers and professors but also the
-    <a href="https://www.pathwaystoeducation.ca/the-impacts-of-socioeconomic-status-and-educational-attainment-on-youth-success/"
-       target="_blank" rel="noopener noreferrer">socioeconomic barriers</a>
-    that impact the student's progress.
-  </p>
-  <p>To explore more, click on any of the following links or the navigation bar on top of the page:
-  </p>
-  <div class="lnks">
-    <div class="b">
-      <ul class="type">
-        <li><a href="tutoring.html">Tutoring</a></li>
-        <li><a href="sessions.html">Sessions</a></li>
-        <li><a href="impact.html">Impact</a></li>
-        <li><a href="faq.html">FAQs</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+    <div class="row">
+      <div class="column">
+        <img src="Hoodie.PNG" alt="Hoodie">
+      </div>
+      <div class="column">
+        <p><span class="error">* required field</span></p>
+        <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>
+        <!--<form id="contact-form" method="post" action="contactFormHandler.php"> -->
+        <label for="name">Your Name</label>
+        <span class="error">* <?php echo $nameErr;?></span>
+        <input type="text" id="name" name="name" placeholder="Write your name here..." required>
+        <label for="email">Your E-mail</label>
+        <span class="error">* <?php echo $emailErr;?></span>
+        <input type="text" id="email" name="email" placeholder="Write your email here..." required>
+        <label for="Grade">Grade</label>
+        <select name="Grade" id="Grade">
+          <option value="Select grade">Select grade</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select>
+        <label for="Subject">Subject</label>
+        <select id="Subject" name="Subject">
+          <option value="Select subject">Select subject</option>
+          <option value="Mathematics">Mathematics</option>
+          <option value="Chemistry">Chemistry</option>
+          <option value="Physics">Physics</option>
+        </select>
+        <label for="message">Message</label>
+        <span class="error">* <?php echo $messageErr;?></span>
+        <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+        <input type="submit" value="Submit">
+        </form>
+      </div>
     </div>
   </div>
 </section>
 
-<script>
-        const toggleBtn = document.querySelector(' .toggle_btn')
-        const toggleBtnIcon = document.querySelector(' .toggle_btn i')
-        const dropDownMenu = document.querySelector(' .dropdown_menu')
+<!--
+  <section id="contact">
+    <h2>Contact details</h2>
+        <address>
+          <p>Thanks for your interest to embark on denim sustainability project.</p>
+          <p>If you would like to contribute towards this project, please
+            contact me at either of the follwoing details:</p>
+        <ul>
+          <li>by phone @ 0123-456-7891</li>
+          <li>by email @ webdev&design@gmail.com</li>
+          <li>by visiting sustainable-denim.html</li>
+        </ul>
+        </address>
+  </section>
 
-        toggleBtn.onclick = function(){
-          dropDownMenu.classList.toggle('open')
-          const isOpen = dropDownMenu.classList.contains('open')
+  <script>
+    const toggleBtn = document.querySelector(' .toggle_btn')
+    const toggleBtnIcon = document.querySelector(' .toggle_btn i')
+    const dropDownMenu = document.querySelector(' .dropdown_menu')
 
-          toggleBtnIcon.classList = isOpen
-          ? 'fa-solid fa-xmark'
-          : 'fa-solid fa-bars'
-        }
-      </script>
+    toggleBtn.onclick = function(){
+      dropDownMenu.classList.toggle('open')
+      const isOpen = dropDownMenu.classList.contains('open')
+
+      toggleBtnIcon.classList = isOpen
+      ? 'fa-solid fa-xmark'
+      : 'fa-solid fa-bars'
+    }
+  </script>
+
+<br>
+
+<footer>
+  <ul>
+    <li><a href=""><i class="fab fa-facebook"></i><a/></li>
+    <li><a href=""><i class="fab fa-instagram-square"></i><a/></li>
+    <li><a href=""><i class="fab fa-twitter-square"></i><a/></li>
+    <li><a href=""><i class="fab fa-youtube-square"></i><a/></li>
+  </ul>
+
+  <script src="https://kit.fontawesome.com/d1aaff2cdf.js" crossorigin="anonymous"></script>
+
+-->
 
 <br>
 
