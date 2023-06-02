@@ -387,17 +387,22 @@ section#about .bg-primary{
   height: auto !important;*/
   background-position: center;
   background-size: contain;
+  flex-direction: row !important;
   
+}
+
+section#about .p-5{
+  padding: 1rem !important;
 }
 
 section#about .bg-primary h1{
   font-weight: bolder !important;
-  font-size: 60pt;
+  font-size: 30pt;
 }
 
 #index h1{
   font-size: 3rem;
-  margin-bottom: 1rem;
+  /*margin-bottom: 1rem;*/
 }
 
 .Logo
@@ -549,5 +554,6 @@ input[type=submit]:hover {
     width: unset;
   }
 }
+
 
 
