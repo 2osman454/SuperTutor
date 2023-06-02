@@ -44,6 +44,7 @@ a{
   overflow: hidden;
   background: grey;
   border-bottom: 3px solid rgb(6, 211, 6);
+  border-top: 20px solid rgb(26, 58, 94);
   position: relative;
   display: flex;
   flex-wrap: nowrap !important;
@@ -379,16 +380,19 @@ section#index{
   /*max-width: 95%;*/
 }
 
-.bg-primary{
+section#about .bg-primary{
   --bs-bg-opacity: 0 !important;
   background-image: url("Img.png");
-  max-width: 100%;
+  /*max-width: 100%;
+  height: auto !important;*/
   background-position: center;
+  background-size: contain;
+  
 }
 
-.bg-primary h1{
-  color: #504040 !important;
-  text-align: left !important;
+section#about .bg-primary h1{
+  font-weight: bolder !important;
+  font-size: 60pt;
 }
 
 #index h1{
@@ -398,8 +402,8 @@ section#index{
 
 .Logo
 {
-  width: 140px;
-  height: 100px;
+  width: 90px;
+  height: 76.5px;
   float: left;
   border-left: none;
   border-top: none;
