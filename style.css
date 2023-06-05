@@ -35,7 +35,7 @@ a{
 
 .navbar
 {
-  width: 100%;
+  max-width: 100%;
   height: 100px;
   justify-content: space-between;
   margin: 0 auto;
@@ -44,7 +44,7 @@ a{
   overflow: hidden;
   background: grey;
   border-bottom: 3px solid rgb(6, 211, 6);
-  border-top: 20px solid rgb(26, 58, 94);
+  /*border-top: 20px solid rgb(26, 58, 94);*/
   position: relative;
   display: flex;
   flex-wrap: nowrap !important;
@@ -253,6 +253,14 @@ p
   border-radius: 10px;
 }
 
+#subjects{
+  max-width: 100%;
+  height: auto;
+  float: left;
+  margin: 0 30px 0 0;
+  border-radius: 10px;
+}
+
 .roman
 {
   list-style-type: lower-roman;
@@ -407,13 +415,14 @@ section#about .bg-primary h1{
 
 .Logo
 {
-  width: 90px;
-  height: 76.5px;
-  float: left;
-  border-left: none;
+  width: 112.26px;
+  height: 100px;
+  /*float: left;*/
+  border-left: 0px solid grey;
   border-top: none;
   border-bottom: none;
   border-right: none;
+  
 }
 
 /*
