@@ -42,7 +42,7 @@ a{
   align-items: center;
   float: none !important;
   overflow: hidden;
-  background: grey;
+  background: rgba(8, 5, 170, 0.151);
   border-bottom: 3px solid rgb(6, 211, 6);
   /*border-top: 20px solid rgb(26, 58, 94);*/
   position: relative;
@@ -234,10 +234,14 @@ a{
   color: #C4C4C4;
 }
 
-h2
-{
+h2{
   font-family: 'Times New Roman', Times, serif;
   line-height: 1.6;
+}
+
+h6{
+  font-weight: bold !important;
+  color: #000000b7;
 }
 
 p
