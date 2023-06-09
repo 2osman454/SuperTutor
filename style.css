@@ -254,7 +254,7 @@ p
   height: auto;
   float: left;
   margin: 0 30px 0 0;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 #subjects{
@@ -262,7 +262,31 @@ p
   height: auto;
   float: left;
   margin: 0 30px 0 0;
-  border-radius: 10px;
+  border-radius: 5px;
+}
+
+#oneonone{
+  max-width: 100%;
+  height: auto;
+  float: left;
+  margin: 0 30px 0 0;
+  border-radius: 5px;
+}
+
+#groupSession{
+  max-width: 100%;
+  height: auto;
+  float: left;
+  margin: 0 30px 0 0;
+  border-radius: 5px;
+}
+
+#homeSchoolingSession{
+  max-width: 100%;
+  height: auto;
+  float: left;
+  margin: 0 30px 0 0;
+  border-radius: 5px;
 }
 
 .roman
@@ -523,12 +547,30 @@ input[type=submit]:hover {
   clear: both;
 }
 
+/* Create three equal columns that floats next to each other */
+.colm {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: auto;
+}
+
+/* Clear floats after the columns */
+.rw:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column, input[type=submit] {
     width: 100%;
     margin-top: 0;
+  }
+
+  .colm{
+    width: 100%;
   }
 }
 
