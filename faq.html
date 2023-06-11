@@ -26,7 +26,7 @@
             <li><a href="about.html">About</a></li>
             <li><a href="tutoring.html">Tutoring</a></li>
             <li><a href="sessions.html">Sessions</a></li>
-            <li><a href="impact.html">Impacts</a></li>
+            <li><a href="impact.html">Impact</a></li>
             <li><a class = "active" href="faq.html">FAQs</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -41,7 +41,7 @@
             <li><a href="about.html">About</a></li>
             <li><a href="tutoring.html">Tutoring</a></li>
             <li><a href="sessions.html">Sessions</a></li>
-            <li><a href="impact.html">Impacts</a></li>
+            <li><a href="impact.html">Impact</a></li>
             <li><a class = "active" href="faq.html">FAQs</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -50,8 +50,105 @@
 
 <body>
 <section id="FAQs">
+    <br>
     <h2>Frequently Asked Questions</h2>
-    <p>Answers to commonly asked questions</p>
+    <br>
+    <h6>Here are the answers to some of your unanswered questions</h6>
+    <br>
+    
+    <button class="accordion">1. Is the first session FREE?</button>
+    <div class="panel">
+    <p>
+        Yes, the first session is FREE! This is a consultation session. 
+        This is the session where I get to interact with the parent and the student.
+    </p>
+    <p>
+        In this session, the parent/student can explain more about the need for 
+        tutoring, expectations, schedule, objectives and how long 
+        the objective can be accomplished.
+    </p>
+    </div>
+
+    <button class="accordion">2. Do I have to sign an enrollment contract?</button>
+    <div class="panel">
+    <p>
+        A Big NO! You do not have to sign any contract and it is my intention not to 
+        lock a parent/or student and myself into a long-term commitment. So book a 
+        session based on your need and whenever you need it.
+    </p>
+    </div>
+
+    <button class="accordion">3. What is the schedule like?</button>
+    <div class="panel">
+    <p>
+        I start tutoring from 5:00 – 9:00 PM (Eastern Time) Monday to Friday and 
+        any time on Saturday and Sunday. I work with your schedule based on my 
+        availability and the available times I have left. A maximum of 1hr/session 
+        and a maximum of 2hrs/session.
+    </p>
+    </div>
+
+    <button class="accordion">4. What is needed for each session?</button>
+    <div class="panel">
+    <p>
+        The work to be covered must be sent at least 12 hours before the scheduled 
+        session commences. The materials required from the student can be a textbook 
+        (if electronic/pdf copy usually is available), questions from the textbook, 
+        notes, homework or any relevant material.
+    </p>
+    </div>
+
+    <button class="accordion">5. What is the cost per session?</button>
+    <div class="panel">
+    <p>
+        Check the sessions page to check the cost for each session (one-on-one, group or homeschooling session). 
+        You are eligible for a discount if you plan on booking at least 4 consecutive sessions. We can talk about 
+        that in our first meeting or meetings afterward.
+    </p>
+    </div>
+
+    <button class="accordion">6. How can I pay and must the payment be made in advance?</button>
+    <div class="panel">
+    <p>
+        All payments are to be made through Interac eTransfer. You pay per session and only after 
+        the session is done. So no advance payment is required. The details on how to pay will be 
+        worked out at the first meeting.
+    </p>
+    </div>
+
+    <button class="accordion">7. What subjects are you tutoring?</button>
+    <div class="panel">
+    <p>
+        I tutor high school mathematics (Grades 9 – 12), Science (Grades 9 -10), Chemistry and Physics 
+        (Grades 11 – 12).
+    </p>
+    </div>
+
+    <button class="accordion">8. Are you a certified teacher?</button>
+    <div class="panel">
+    <p>
+        NO! I am not a certified teacher and did not receive any teacher education training. 
+        Check out the About page of this website to learn more about me, my experience and why I tutor.
+    </p>
+    </div>
+
+    <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+        } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+        } 
+    });
+    }
+    </script>
+
 </section>
 
 <script>
